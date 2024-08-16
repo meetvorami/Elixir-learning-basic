@@ -102,8 +102,43 @@ IO.puts(Date.day_of_year(date))
 IO.puts(Date.day_of_year(date_1))
 
 
-# date end of the month
+# date end of the month -> returns last date of the month
 IO.puts("")
 IO.puts("date end of the month")
 IO.puts(Date.end_of_month(date))
 IO.puts(Date.end_of_month(date_1))
+
+# date end of the week
+IO.puts("")
+IO.puts("date end of the week")
+IO.puts(Date.end_of_week(date))
+IO.puts(Date.end_of_week(date_1))
+
+# leap_year? => return whether it is a leap year or not
+IO.puts("")
+IO.puts("leap_year?")
+IO.puts(Date.leap_year?(date))
+IO.puts(Date.leap_year?(date_1))
+
+# quarter of the year
+IO.puts("")
+IO.puts("quarter of the year")
+IO.puts(Date.quarter_of_year(date))
+IO.puts(Date.quarter_of_year(date_1))
+
+# gergoriean day
+IO.puts("")
+IO.puts("converts a date to a gergoriean")
+IO.puts(Date.to_gregorian_days(date))
+IO.puts(Date.to_gregorian_days(date_1))
+
+# to return current date
+IO.puts("")
+IO.puts("current date")
+IO.puts(Date.utc_today())
+
+# year of era
+IO.puts("")
+IO.puts("year of area")
+IO.puts(inspect(Date.year_of_era(date)))
+IO.puts(inspect(Date.year_of_era(date_1)))
